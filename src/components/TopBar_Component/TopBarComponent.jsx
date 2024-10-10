@@ -26,9 +26,10 @@ const TopBarComponent = () => {
             </div>
 
             <div className="actions">
+
                 <button className="action-button" onClick={handleCreateAccount}>
                     <img src={addUser} alt="Agregar Usuario" className="button-icon"/>
-                    <span>Crear cuenta</span>
+                    <span>Registrarse</span>
                 </button>
 
                 <button className="action-button" onClick={handleLogin}>
@@ -39,9 +40,6 @@ const TopBarComponent = () => {
         </div>
     );
 };
-
-
-
 
 
 export {TopBarComponent};

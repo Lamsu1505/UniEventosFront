@@ -47,12 +47,15 @@
     font-size: 20px;
     font-family: Roboto, sans-serif;
     gap: 10px;
+    padding: 2px;
 }
 
 .action-button:hover {
-    background-color: #6996d8; /* Cambia el color de fondo en hover */
+    background-color: #829cc5; /* Cambia el color de fondo en hover */
     color: #ffffff; /* Color del texto al hacer hover (opcional) */
     font-weight: bold;
+    padding: 5px;
+    border-radius: 15px;
 }
 
 .action-button image{

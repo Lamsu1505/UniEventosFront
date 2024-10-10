@@ -1,13 +1,17 @@
-import {BGHomeComponent} from "../components/BackGroundHomeComponent/BGHomeComponent";
-import {TopBarComponent} from "../components/TopBar_Component/TopBarComponent"
+import { BGHomeComponent } from "../components/BackGroundHomeComponent/BGHomeComponent";
+import { TopBarComponent } from "../components/TopBar_Component/TopBarComponent";
+import {CategoriesBarComponent} from "../components/CategoriesBarComponent/CategoriesBarComponent";
 
 function HomePage() {
     return (
-        <BGHomeComponent
-            COMPONENT={TopBarComponent}
-        />
+        <div>
+            <BGHomeComponent>
+                <TopBarComponent/>
+                <CategoriesBarComponent/>
+            </BGHomeComponent>
+        </div>
 
     );
 }
 
-export {HomePage};
+export { HomePage };

@@ -1,14 +1,10 @@
 import "./BGHomeComponent.css"
 
 
-function BGHomeComponent({COMPONENT}) {
+export function BGHomeComponent({ children }) {
     return (
-        <div className="backL">
-
-            {COMPONENT && <COMPONENT/> }
+        <div>
+            {children}
         </div>
-
     );
 }
-
-export {BGHomeComponent};
