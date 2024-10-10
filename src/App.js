@@ -1,14 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-import {RegisterPage} from "./Pages/RegisterPage";
-import {LogInPage} from "./Pages/LogInPage";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { RegisterPage } from './Pages/RegisterPage';
+import { LogInPage } from './Pages/LogInPage';
+import { HomePage } from './Pages/HomePage';
 
 function App() {
-  return (
-      <div>
-        <LogInPage/>
-      </div>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/register" element={<RegisterPage />} />
+                <Route path="/login" element={<LogInPage />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

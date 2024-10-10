@@ -1,0 +1,59 @@
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px;
+    width: 100%;
+    background-color: #4a90e2;
+    color: white;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 25px;
+}
+
+.logo-text {
+    font-weight: bold;
+    font-size: 35px;
+    background-color: #ffd700;
+    color: #4a90e2;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.app-name {
+    font-size: 30px;
+    font-family: Roboto, sans-serif;
+
+}
+
+.actions {
+    display: flex;
+    gap: 100px;
+    padding-right: 30px;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+}
+
+.action-button image{
+    width: 1px; /* Ajusta este valor según el tamaño deseado */
+    height: auto;
+}
+
+.action-button svg {
+    margin-right: 5px;
+}
