@@ -50,7 +50,7 @@
     display: flex;
     width: 100%;
     gap: 50px;
-
+align-items: center;
 }
 
 
@@ -70,10 +70,12 @@
     cursor: pointer;
 }
 
-.button-icon {
-    width: 45px; /* Ajusta este valor según el tamaño deseado */
-    fill: white;
+.passwordIcon{
+    width: 30px;
+    height: 20px;
 }
+
+
 
 .btnEye{
     display: inline-block;

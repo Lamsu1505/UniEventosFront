@@ -6,7 +6,6 @@
     width: 100%;
     background-color: #4a90e2;
     color: white;
-
 }
 
 .logo {
@@ -47,6 +46,13 @@
     cursor: pointer;
     font-size: 20px;
     font-family: Roboto, sans-serif;
+    gap: 10px;
+}
+
+.action-button:hover {
+    background-color: #6996d8; /* Cambia el color de fondo en hover */
+    color: #ffffff; /* Color del texto al hacer hover (opcional) */
+    font-weight: bold;
 }
 
 .action-button image{
@@ -56,4 +62,9 @@
 
 .action-button svg {
     margin-right: 5px;
+}
+
+.button-icon{
+    width: 50px;
+    height: 50px;
 }

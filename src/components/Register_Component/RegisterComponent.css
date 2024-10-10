@@ -9,6 +9,7 @@
     position: relative;
     margin-left: 150px;
     margin-top: 25px;
+    align-content: center;
 
 }
 
@@ -112,3 +113,4 @@
         opacity:0;
         }
 }
+

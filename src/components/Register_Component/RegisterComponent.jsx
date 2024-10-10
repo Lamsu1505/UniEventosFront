@@ -60,36 +60,107 @@
         };
 
         return (
-            <form className="form" onSubmit={handleSubmit}>
-                <p className="title">Registrate</p>
-                <p className="message">Registrate en UniEventos para que puedas disfrutar de nuestros beneficios.</p>
+            <div className="form1">
+                <form className="form" onSubmit={handleSubmit}>
+                    <p className="title">Registrate</p>
+                    <p className="message">Registrate en UniEventos para que puedas disfrutar de nuestros
+                        beneficios.</p>
 
-                <label>
-                    <input
-                        required
-                        placeholder=""
-                        type="number"
-                        className="input"
-                        name="id"
-                        value={formData.id}
-                        onChange={handleChange}
-                    />
-                    <span>Numero de documento</span>
-                </label>
-
-
-                <div className="flex">
                     <label>
                         <input
                             required
                             placeholder=""
-                            type="text"
+                            type="number"
                             className="input"
-                            name="firstName"
-                            value={formData.firstName}
+                            name="id"
+                            value={formData.id}
                             onChange={handleChange}
                         />
-                        <span>Firstname</span>
+                        <span>Numero de documento</span>
+                    </label>
+
+
+                    <div className="flex">
+                        <label>
+                            <input
+                                required
+                                placeholder=""
+                                type="text"
+                                className="input"
+                                name="firstName"
+                                value={formData.firstName}
+                                onChange={handleChange}
+                            />
+                            <span>Firstname</span>
+                        </label>
+
+                        <label>
+                            <input
+                                required
+                                placeholder=""
+                                type="text"
+                                className="input"
+                                name="lastName"
+                                value={formData.lastName}
+                                onChange={handleChange}
+                            />
+                            <span>Lastname</span>
+                        </label>
+                    </div>
+
+                    <label>
+                        <input
+                            required
+                            placeholder=""
+                            type="email"
+                            className="input"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleChange}
+                        />
+                        <span>Email Address</span>
+                    </label>
+
+                    <div className="flex">
+                        <label>
+                            <input
+                                required
+                                placeholder=""
+                                type="password"
+                                className="input"
+                                name="password"
+                                value={formData.password}
+                                onChange={handleChange}
+                            />
+                            <span>Password</span>
+                        </label>
+
+                        <label>
+                            <input
+                                required
+                                placeholder=""
+                                type="password"
+                                className="input"
+                                name="confirmPassword"
+                                value={formData.confirmPassword}
+                                onChange={handleChange}
+                            />
+                            <span>Confirm password</span>
+                        </label>
+                    </div>
+
+
+                    <label>
+                        <input
+                            required
+                            placeholder=""
+                            type="number"
+                            className="input"
+                            name="phoneNumber"
+                            value={formData.phoneNumber}
+                            onChange={handleChange}
+                        />
+                        <span>Phone Number</span>
                     </label>
 
                     <label>
@@ -98,87 +169,21 @@
                             placeholder=""
                             type="text"
                             className="input"
-                            name="lastName"
-                            value={formData.lastName}
+                            name="address"
+                            value={formData.address}
                             onChange={handleChange}
                         />
-                        <span>Lastname</span>
-                    </label>
-                </div>
-
-                <label>
-                    <input
-                        required
-                        placeholder=""
-                        type="email"
-                        className="input"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                    />
-                    <span>Email Address</span>
-                </label>
-
-                <div className="flex">
-                    <label>
-                        <input
-                            required
-                            placeholder=""
-                            type="password"
-                            className="input"
-                            name="password"
-                            value={formData.password}
-                            onChange={handleChange}
-                        />
-                        <span>Password</span>
+                        <span> Home Address</span>
                     </label>
 
-                    <label>
-                        <input
-                            required
-                            placeholder=""
-                            type="password"
-                            className="input"
-                            name="confirmPassword"
-                            value={formData.confirmPassword}
-                            onChange={handleChange}
-                        />
-                        <span>Confirm password</span>
-                    </label>
-                </div>
+                    <button className="submit">Submit</button>
+                    <p className="signin">
+                        ? <a href="#">Signin</a>
+                    </p>
+                </form>
 
+            </div>
 
-                <label>
-                    <input
-                        required
-                        placeholder=""
-                        type="number"
-                        className="input"
-                        name="phoneNumber"
-                        value={formData.phoneNumber}
-                        onChange={handleChange}
-                    />
-                    <span>Phone Number</span>
-                </label>
-
-                <label>
-                    <input
-                        required
-                        placeholder=""
-                        type="text"
-                        className="input"
-                        name="address"
-                        value={formData.address}
-                        onChange={handleChange}
-                    />
-                    <span> Home Address</span>
-                </label>
-
-                <button className="submit">Submit</button>
-                <p className="signin">
-                    ? <a href="#">Signin</a>
-                </p>
-            </form>
         );
     };
 

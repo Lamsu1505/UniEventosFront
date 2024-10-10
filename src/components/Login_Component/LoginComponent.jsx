@@ -81,12 +81,9 @@ function LoginComponent() {
                     </label>
 
                     <label className="btnEye">
-                        <button
-                            type="button"
-                            className="toggle-password"
-                            onClick={() => setShowPassword(!showPassword)}
-                        >
+                        <button type="button" className="toggle-password" onClick={() => setShowPassword(!showPassword)}>
                             <img
+                                className="passwordIcon"
                                 src={showPassword ? eyeOpened : eyeClosed}
                                 alt={showPassword ? "Ocultar contraseña" : "Mostrar contraseña"}
                             />
