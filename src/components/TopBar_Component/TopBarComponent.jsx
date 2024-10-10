@@ -28,16 +28,19 @@ const TopBarComponent = () => {
             <div className="actions">
 
                 <button className="action-button" onClick={handleCreateAccount}>
-                    <img src={addUser} alt="Agregar Usuario" className="button-icon"/>
+                    <img src={addUser} alt="Agregar Usuario" className="button-icon1"/>
                     <span>Registrarse</span>
                 </button>
 
                 <button className="action-button" onClick={handleLogin}>
-                    <img src={user} alt="Agregar Usuario" className="button-icon"/>
+                    <img src={user} alt="Agregar Usuario" className="button-icon1"/>
                     <span>Iniciar sesión</span>
                 </button>
             </div>
+
         </div>
+
+
     );
 };
 

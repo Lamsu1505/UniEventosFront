@@ -58,6 +58,11 @@
     border-radius: 15px;
 }
 
+.button-icon1{
+    width: 60px;
+    height: 40px;
+}
+
 .action-button image{
     width: 1px; /* Ajusta este valor según el tamaño deseado */
     height: auto;
