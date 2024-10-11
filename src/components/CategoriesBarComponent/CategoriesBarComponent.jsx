@@ -23,7 +23,7 @@ const CategoriesBarComponent = () => {
 
                 <button className="categorie">
                     <img src={listImg} className="button-icon"/>
-                    <span className="categorieText">Todos los eventos</span>
+                    <span className="categorieText">Eventos</span>
                 </button>
 
                 <button className="categorie">

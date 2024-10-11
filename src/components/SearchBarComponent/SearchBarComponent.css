@@ -1,0 +1,64 @@
+/* Contenedor principal de la barra de búsqueda */
+.search-bar {
+    width: 700px;   /* Ancho fijo, ajusta según sea necesario */
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    border: 1px solid black;
+
+}
+.contenedorSearch{
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+}
+
+/* Estilo para el input de búsqueda */
+.search-input {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.search-input i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.search-input input {
+    border: none;
+    outline: none;
+    width: 200px;
+}
+
+/* Botones de filtro */
+.filter-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: #f0f0f0;
+}
+
+.filter-button i {
+    margin-left: 10px;
+    color: #007bff;
+}

@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px 10px;
-    width: 100%;
+    width: 98.7%;
     background-color: #4a90e2;
     color: white;
 }
@@ -48,13 +48,12 @@
     font-family: Roboto, sans-serif;
     gap: 10px;
     padding: 2px;
+    transition: background-color 0.5s ease;
 }
 
 .action-button:hover {
     background-color: #829cc5; /* Cambia el color de fondo en hover */
     color: #ffffff; /* Color del texto al hacer hover (opcional) */
-    font-weight: bold;
-    padding: 5px;
     border-radius: 15px;
 }
 

@@ -1,0 +1,24 @@
+/* Estilos para el contenedor fijo */
+.prueba{
+
+}
+
+.pruebaSearc{
+    transform: translateY(-40px);
+}
+
+.contenedor{
+    width: 1500px;   /* Ancho fijo, ajusta según sea necesario */
+    height: 300px;  /* Alto fijo, ajusta según sea necesario */
+    overflow: hidden; /* Asegura que no se desborde el contenido */
+    margin: 0 auto;  /* Centra el contenedor horizontalmente */
+    display: flex;
+    justify-content: center; /* Centra el contenido dentro del contenedor */
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.imgCircus{
+    border-radius: 30px;
+}
