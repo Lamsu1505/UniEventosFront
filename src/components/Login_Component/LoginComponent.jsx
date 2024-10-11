@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import "./LoginComponent.css";
 import eyeClosed from "./imgs/eyeClosed.svg"
 import eyeOpened from "./imgs/eye opened.svg"
+import {useNavigate} from "react-router-dom";
 
 function LoginComponent() {
+
+    const navigate = useNavigate();
+
     const [formData, setFormData] = useState({
         email: "",
         password: "",
@@ -20,19 +24,17 @@ function LoginComponent() {
     };
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
 
+        e.preventDefault();
         try {
             const response = await fetch("http://localhost:8080/api/clients/login", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
                 body: JSON.stringify({
                     email: formData.email,
                     password: formData.password,
                 }),
             });
+
 
             if (response.ok) {
                 const data = await response.json();
@@ -92,7 +94,9 @@ function LoginComponent() {
                 </div>
 
 
-                <button type="submit" className="submit">Iniciar sesion</button>
+                <button type="submit" className="submit" onSubmit={handleSubmit}>
+                    Iniciar sesion
+                </button>
 
                 <div className="social-account-container">
                     <span className="title">O inicia sesión con</span>

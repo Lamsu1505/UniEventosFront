@@ -1,6 +1,5 @@
 /* Estilos para el contenedor fijo */
 .prueba{
-
 }
 
 .pruebaSearc{
@@ -17,6 +16,9 @@
     align-items: center;
     padding-top: 5px;
     padding-bottom: 5px;
+
+    position: relative; /* Permite que los elementos hijos se posicionen absolutamente en relación a este contenedor */
+
 }
 
 .imgCircus{

@@ -1,6 +1,6 @@
 /* Contenedor principal de la barra de búsqueda */
 .search-bar {
-    width: 700px;   /* Ancho fijo, ajusta según sea necesario */
+    width: 930px;   /* Ancho fijo, ajusta según sea necesario */
     height: 30px;
     display: flex;
     justify-content: center;
@@ -12,23 +12,88 @@
     gap: 20px;
     border: 1px solid black;
 
+    transform: translateY(-35px);
+
 }
+
+.filter-select{
+    display: flex;
+    align-content: center;
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+}
+
+.filter-select-text{
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+
+.filter-select:hover{
+    background-color: #e6e6e6;
+
+}
+
 .contenedorSearch{
     display: flex;
     justify-content: center; /* Centrar horizontalmente */
     align-items: center;
+
 }
 
 /* Estilo para el input de búsqueda */
 .search-input {
     display: flex;
     align-items: center;
-    padding: 10px 15px;
-    border-radius: 10px;
+    padding: 7px 5px;
+    border-radius: 20px;
     border: 1px solid #ccc;
     background-color: white;
     margin-right: 10px;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+
 }
+
+.search-input:hover{
+    background-color: #e6e6e6;
+    transition: background-color 0.3s ease;
+}
+
+.search-input:hover .inputBuscar{
+    transition: background-color 0.3s ease;
+    background-color: #e6e6e6;
+}
+
+.search-input-calendar{
+    display: flex;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    margin-right: 10px;
+    gap: 10px;
+
+}
+
+.search-input-calendar:hover {
+    background-color: #e6e6e6;
+}
+
+.search-input-calendar:hover .date-picker{
+    background-color: #e6e6e6;
+}
+
+.inputBuscar{
+    font-family: Roboto, sans-serif;
+}
+
 
 .search-input i {
     margin-right: 10px;
@@ -49,7 +114,7 @@
     margin-right: 10px;
     background-color: white;
     border: 1px solid #ccc;
-    border-radius: 25px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -62,3 +127,15 @@
     margin-left: 10px;
     color: #007bff;
 }
+
+.button-iconSearch{
+    width: 20px;
+}
+
+
+.date-picker {
+    border: none;
+
+}
+
+

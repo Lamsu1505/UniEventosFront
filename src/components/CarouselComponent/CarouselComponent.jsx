@@ -11,9 +11,6 @@ const CarouselComponent = () => {
             <div className="contenedor">
                 <img src={circusMaximus} className="imgCircus"/>
             </div>
-            <div className="pruebaSearc">
-                <SearchBarComponent/>
-            </div>
         </div>
 
     );
