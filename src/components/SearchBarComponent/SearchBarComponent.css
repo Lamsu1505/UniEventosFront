@@ -22,11 +22,11 @@
     padding: 10px 15px;
     margin-right: 10px;
     background-color: white;
-    border: 1px solid #ccc;
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 150px;
+    border: #0d2550 0.5px solid;
 }
 
 .filter-select-text{
@@ -57,6 +57,7 @@
     margin-right: 10px;
     gap: 10px;
     transition: background-color 0.3s ease;
+    border: #0d2550 0.5px solid;
 
 }
 
@@ -75,10 +76,11 @@
     align-items: center;
     padding: 7px 10px;
     border-radius: 20px;
-    border: 1px solid #ccc;
     background-color: white;
     margin-right: 10px;
     gap: 10px;
+    border: #0d2550 0.5px solid;
+    width: 200px;
 
 }
 

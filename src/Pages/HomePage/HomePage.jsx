@@ -4,11 +4,14 @@ import { TopBarComponent } from "../../components/TopBar_Component/TopBarCompone
 import { CategoriesBarComponent } from "../../components/CategoriesBarComponent/CategoriesBarComponent";
 import { CarouselComponent } from "../../components/CarouselComponent/CarouselComponent";
 import { SearchBarComponent } from "../../components/SearchBarComponent/SearchBarComponent";
+import "./HomePage.css"
 
 function HomePage() {
+
     useEffect(() => {
         document.title = "Home - UniEventos"; // Cambia "My App" por el nombre de tu aplicación
     }, []);
+
 
     return (
 
@@ -20,9 +23,14 @@ function HomePage() {
             <div className="contenedorCategoriesBar">
                 <CategoriesBarComponent/>
             </div>
-            <div className="containerFotoAndSearch">
+            <div className="contenedorImgYBuscar">
                 <CarouselComponent/>
-                <SearchBarComponent />
+                <SearchBarComponent/>
+
+
+            </div>
+            <div>
+
             </div>
         </div>
 
