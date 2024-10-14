@@ -1,26 +1,44 @@
-/* Estilos para el contenedor fijo */
-.prueba{
-}
-
-.pruebaSearc{
-    transform: translateY(-40px);
-}
-
-.contenedor{
-    width: 1500px;   /* Ancho fijo, ajusta según sea necesario */
-    height: 300px;  /* Alto fijo, ajusta según sea necesario */
-    overflow: hidden; /* Asegura que no se desborde el contenido */
-    margin: 0 auto;  /* Centra el contenedor horizontalmente */
+.carousel-container {
+    width: 78%;
+    height: 280px; /* Altura fija para el contenedor */
+    overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+    position: relative;
     display: flex;
-    justify-content: center; /* Centra el contenido dentro del contenedor */
     align-items: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-    position: relative; /* Permite que los elementos hijos se posicionen absolutamente en relación a este contenedor */
-
+    justify-content: center;
+    border-radius: 30px;
 }
 
-.imgCircus{
-    border-radius: 30px;
+.contenedorGeneralCarrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.carousel-item {
+    transition: opacity 1s ease-in-out; /* Efecto de desvanecimiento */
+    position: absolute; /* Asegura que las imágenes se superpongan */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Inicialmente oculta */
+}
+
+.carousel-item.active {
+    opacity: 1; /* Muestra solo la imagen activa */
+}
+
+.carousel img {
+    width: 100%; /* La imagen se ajustará al ancho del contenedor */
+    height: 100%; /* La imagen se ajustará a la altura del contenedor */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor sin deformarse */
+}
+
+.contenedorBotonesCarousel {
+    display: flex;
+    width: 100%;
+    background-color: yellow; /* Puedes cambiar esto o eliminarlo según sea necesario */
+    transform: translateY(-60px);
 }

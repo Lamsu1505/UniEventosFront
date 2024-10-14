@@ -6,6 +6,8 @@ import { HomePage } from './Pages/HomePage/HomePage';
 import {LoginComponent} from "./components/Login_Component/LoginComponent";
 import {RegisterComponent} from "./components/Register_Component/RegisterComponent";
 
+
+
 function App() {
     return (
         <Router>
