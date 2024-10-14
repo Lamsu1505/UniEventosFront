@@ -5,7 +5,7 @@
     transition: transform 0.2s, box-shadow 0.2s;
     margin: 20px; /* Espaciado alrededor de la tarjeta */
     background-color: #fff; /* Fondo blanco para la tarjeta */
-    width: 90%;
+    width: 70%;
     padding: 0; /* Elimina el padding interno de la tarjeta */
 }
 
@@ -22,16 +22,21 @@
 }
 
 .card-body {
-    background-color: #fafafa;
-    padding: 0; /* Elimina padding dentro del cuerpo de la tarjeta */
-    margin: 0; /* Elimina el margen en el cuerpo */
+    background-color: #e8e8e8;
+    padding-left: 10px; /* Elimina padding dentro del cuerpo de la tarjeta */
+    padding-top: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: -10px;
 }
 
 .card-title {
-    font-size: 1.25rem; /* Tamaño de fuente del título */
-    font-weight: 600; /* Peso del texto más grueso */
-    margin: 0; /* Elimina margen inferior */
-    color: #333; /* Color del texto del título */
+    font-size: 1.7rem; /* Tamaño de fuente del título */margin: 0; /* Elimina margen inferior */
+    color: #1e1e1e; /* Color del texto del título */
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+
 }
 
 .card-text {
@@ -52,7 +57,7 @@
 
 
 .contenedorImg {
-    height: 252px;
+    height: 186px;
     background-color: black;
     margin: 0; /* Elimina márgenes alrededor de la imagen */
     padding: 0; /* Elimina padding interno */
@@ -64,20 +69,52 @@
     margin: 0; /* Elimina márgenes adicionales */
 }
 
-.infoFecha {
-    background-color: #3590F3;
-    height: 60px;
-    margin: 0; /* Elimina margen */
-    padding: 0; /* Elimina padding */
+.barraInfoConciertoCard{
+    display: flex;
+    justify-content: center;
+
 }
 
-.barraInfoConciertoCard {
-    padding: 0; /* Elimina el padding interno */
-    margin: 0; /* Elimina el margen */
+.infoFecha {
+    background-color: #3590F3;
+    height: 40px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    justify-content: center;
+    padding-right: 7%;
+
 }
+
+.fechaText{
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.infoHora{
+    background-color: #3590F3;
+    height: 40px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    justify-content: center;
+}
+
+
 
 .hola9 {
     height: 100%;
     margin: 0; /* Elimina margen */
     padding: 0; /* Elimina padding */
+}
+
+
+.infoLugar{
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
 }

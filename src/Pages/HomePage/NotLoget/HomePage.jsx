@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import { TopBarComponent } from "../../components/TopBar_Component/TopBarComponent";
-import { CategoriesBarComponent } from "../../components/CategoriesBarComponent/CategoriesBarComponent";
-import { SearchBarComponent } from "../../components/SearchBarComponent/SearchBarComponent";
-import {CarouselComponent} from "../../components/CarouselComponent/CarouselComponent";
+import { TopBarComponent } from "../../../components/TopBar_Component/TopBarComponent";
+import { CategoriesBarComponent } from "../../../components/CategoriesBarComponent/CategoriesBarComponent";
+import { SearchBarComponent } from "../../../components/SearchBarComponent/SearchBarComponent";
+import {CarouselComponent} from "../../../components/CarouselComponent/CarouselComponent";
 import "./HomePage.css"
-import {CardEventoComponent} from "../../components/CardEventoComponent/CardEventoComponent";
-import ContenedorCardsEvents from "../../components/ContenedorCardsEventos/ContenedorCardsEvents";
+import {CardEventoComponent} from "../../../components/CardEventoComponent/CardEventoComponent";
+import ContenedorCardsEvents from "../../../components/ContenedorCardsEventos/ContenedorCardsEvents";
 
 function HomePage() {
 
@@ -38,7 +38,9 @@ function HomePage() {
                 </div>
 
                 <ContenedorCardsEvents/>
+
             </div>
+
         </div>
 
 

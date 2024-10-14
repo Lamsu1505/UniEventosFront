@@ -1,5 +1,5 @@
-import {BgLog} from "../components/BackGroundLogInComponent/BgLog";
-import {LoginComponent} from "../components/Login_Component/LoginComponent";
+import {BgLog} from "../../components/BackGroundLogInComponent/BgLog";
+import {LoginComponent} from "../../components/Login_Component/LoginComponent";
 import {useEffect} from "react";
 
 function LogInPage() {
