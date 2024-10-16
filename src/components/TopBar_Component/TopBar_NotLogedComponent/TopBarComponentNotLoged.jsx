@@ -1,11 +1,11 @@
 
 import React from 'react';
-import "./TopBarComponent.css";
-import addUser from "./imgs/addUser.svg"
-import user from "./imgs/user.svg"
+import "../TopBarComponent.css";
+import addUser from "../imgs/addUser.svg"
+import user from "../imgs/user.svg"
 import { useNavigate } from 'react-router-dom';
 
-const TopBarComponent = () => {
+const TopBarComponentNotLoged = () => {
     const navigate = useNavigate(); // Inicializamos el hook de navegación
 
     // Función para manejar la redirección a la página de registro
@@ -46,4 +46,4 @@ const TopBarComponent = () => {
 };
 
 
-export {TopBarComponent};
+export {TopBarComponentNotLoged};

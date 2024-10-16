@@ -34,8 +34,8 @@
 
 .actions {
     display: flex;
-    gap: 100px;
-    padding-right: 30px;
+    gap: 50px;
+    padding-right: 60px;
 }
 
 .action-button {
@@ -53,7 +53,7 @@
 }
 
 .action-button:hover {
-    background-color: #829cc5; /* Cambia el color de fondo en hover */
+    background-color: #1f3d70; /* Cambia el color de fondo en hover */
     color: #ffffff; /* Color del texto al hacer hover (opcional) */
     border-radius: 15px;
 }
@@ -76,3 +76,59 @@
     width: 50px;
     height: 50px;
 }
+
+.user-menu {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.dropdown-menu {
+    position: absolute; /* Menú en posición absoluta */
+    top: 100%; /* Posición justo debajo del botón */
+    left: 0;
+    background-color: #dcdada;
+    padding: 10px;
+    margin: 0;
+    border-radius: 20px;
+    transform: translateX(10px);
+    list-style-type: none;
+    width: 170px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Alto z-index para que se superponga a otros elementos */
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenedorMenuDesplegado{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.contenedorMenuDesplegado:hover{
+    background-color: #bababa;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.button-icon2{
+    width: 60px;
+    height: 30px;
+}
+
+
+

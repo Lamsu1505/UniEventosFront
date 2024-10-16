@@ -15,6 +15,7 @@
 
 .botonBuscar:hover{
     background-color: #356293;
+    cursor: pointer;
 }
 
 

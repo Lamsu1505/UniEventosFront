@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { TopBarComponent } from "../../../components/TopBar_Component/TopBarComponent";
+import { TopBarComponentLoged } from "../../../components/TopBar_Component/TobBar_LogedComponent/TopBarComponentLoged";
 import { CategoriesBarComponent } from "../../../components/CategoriesBarComponent/CategoriesBarComponent";
 import { SearchBarComponent } from "../../../components/SearchBarComponent/SearchBarComponent";
 import {CarouselComponent} from "../../../components/CarouselComponent/CarouselComponent";
@@ -19,7 +19,7 @@ function HomePageLoged() {
         <div className="contenedorGeneral">
 
             <div className="contenedorTopBar">
-                <TopBarComponent/>
+                <TopBarComponentLoged/>
             </div>
             <div className="contenedorCategoriesBar">
                 <CategoriesBarComponent/>

@@ -8,7 +8,8 @@ const CarouselComponent = () => {
     // Lista de imágenes que se van a mostrar en el carrusel
     const images = [
         require('../CarouselComponent/imgs/circusMaximus.jpg'),
-        require('../CarouselComponent/imgs/gtrImg.jpg')
+        require('../CarouselComponent/imgs/gtrImg.jpg'),
+        require('./imgs/zz.jpg')
     ];
 
     // Estado para controlar la imagen activa
