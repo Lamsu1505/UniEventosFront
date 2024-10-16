@@ -7,11 +7,13 @@
     background-color: #fff; /* Fondo blanco para la tarjeta */
     width: 70%;
     padding: 0; /* Elimina el padding interno de la tarjeta */
+    position: relative; /* Necesario para el botón hover */
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
     border: 3px solid #838383;
+    box-shadow: 5px 5px 20px rgb(34, 34, 34);
 }
 
 .card-img-top {
@@ -21,6 +23,18 @@
     display: block; /* Elimina cualquier espaciado adicional de la imagen */
 }
 
+.nombreEvento{
+    width: 242px; /* Ancho fijo del contenedor */
+    height: 30px; /* Alto fijo del contenedor */
+    overflow: hidden; /* Oculta el contenido que desborda */
+    box-sizing: border-box;
+
+
+    white-space: nowrap; /* No permite que el texto se envuelva a una nueva línea */
+    text-overflow: ellipsis;
+}
+
+
 .card-body {
     background-color: #e8e8e8;
     padding-left: 10px; /* Elimina padding dentro del cuerpo de la tarjeta */
@@ -29,14 +43,15 @@
     display: flex;
     flex-direction: column;
     gap: -10px;
+    width: 100%;
 }
 
 .card-title {
-    font-size: 1.7rem; /* Tamaño de fuente del título */margin: 0; /* Elimina margen inferior */
+    font-size: 1.5rem; /* Tamaño de fuente del título */
+    margin: 0; /* Elimina margen inferior */
     color: #1e1e1e; /* Color del texto del título */
     font-family: Roboto, sans-serif;
     font-weight: bold;
-
 }
 
 .card-text {
@@ -55,7 +70,6 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Línea entre elementos de la lista */
 }
 
-
 .contenedorImg {
     height: 186px;
     background-color: black;
@@ -63,13 +77,7 @@
     padding: 0; /* Elimina padding interno */
 }
 
-.card-img-top {
-    width: 100%;
-    display: block;
-    margin: 0; /* Elimina márgenes adicionales */
-}
-
-.barraInfoConciertoCard{
+.barraInfoConciertoCard {
     display: flex;
     justify-content: center;
 
@@ -84,10 +92,9 @@
     gap: 10%;
     justify-content: center;
     padding-right: 7%;
-
 }
 
-.fechaText{
+.fechaText {
     font-family: Roboto, sans-serif;
     font-size: 15px;
     color: white;
@@ -95,7 +102,7 @@
     font-style: italic;
 }
 
-.infoHora{
+.infoHora {
     background-color: #3590F3;
     height: 40px;
     width: 50%;
@@ -105,16 +112,45 @@
     justify-content: center;
 }
 
+.infoLugar {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
 
+/* Estilos del botón hover */
+.boton-hover {
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding-top: 30px;
+}
 
-.hola9 {
-    height: 100%;
-    margin: 0; /* Elimina margen */
-    padding: 0; /* Elimina padding */
+.contenedorInfo{
+    display: flex;
+    background-color: #e8e8e8;
+    padding-right: 10px;
+}
+
+.card:hover .boton-hover {
+    opacity: 1; /* Mostrar el botón al hacer hover */
+}
+
+.boton-hover img {
+    width: 50px; /* Ajusta el tamaño de la imagen del botón */
+    height: 50px;
 }
 
 
-.infoLugar{
-    font-family: Roboto, sans-serif;
-    font-weight: bold;
+.ticket-icon {
+    fill: #000; /* Color por defecto */
+    transition: transform 0.3s ease, fill 0.5s ease;
+}
+
+.ticket-icon:hover {
+    fill: #3590F3;
+    transform: scale(1.2); /* Agranda el SVG al 120% de su tamaño original */
 }
