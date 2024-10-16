@@ -5,7 +5,7 @@ import {useEffect} from "react";
 function LogInPage() {
 
     useEffect(() => {
-        document.title = "LogIn - UniEventos"; // Cambia "My App" por el nombre de tu aplicación
+        document.title = "Login - UniEventos"; // Cambia "My App" por el nombre de tu aplicación
     }, []);
     return (
 
