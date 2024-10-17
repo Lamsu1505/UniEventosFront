@@ -6,6 +6,7 @@ import { HomePageNotLoged } from './Pages/HomePage/NotLoget/HomePageNotLoged';
 import {LoginComponent} from "./components/Login_Component/LoginComponent";
 import {RegisterComponent} from "./components/Register_Component/RegisterComponent";
 import {HomePageLoged} from "./Pages/HomePage/Loged/HomePageLoged";
+import {AccountPage} from "./Pages/AccountPage/AccountPage";
 
 
 
@@ -17,6 +18,7 @@ function App() {
                 <Route path="/register" element={<RegisterComponent />} />
                 <Route path="/login" element={<LogInPage />} />
                 <Route path="/loged" element={<HomePageLoged />} />
+                <Route path="/MyAccount" element={<AccountPage />} />
 
             </Routes>
         </Router>

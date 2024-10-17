@@ -1,0 +1,27 @@
+.contenedorMiCuenta{
+    background-color: #4a90e2;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    border-top: 2px solid white;
+
+}
+
+.h2MiCuenta{
+    font-family: Roboto, sans-serif;
+    font-size: 200%;
+    color: white;
+    height: 50px;
+    font-weight: normal;
+}
+
+.contenedorPrincipalMyAccount{
+    background-color: #d8d8d8;
+    height: 100%;
+    border-radius: 10px;
+    padding: 2%;
+    display: flex;
+    gap:100px
+
+
+}
