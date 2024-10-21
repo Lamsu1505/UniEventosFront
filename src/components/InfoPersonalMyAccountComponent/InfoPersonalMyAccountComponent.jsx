@@ -13,11 +13,11 @@ const InfoPersonalMyAccountComponent = () => {
                     <div className="form-name">
                         <div className="contenedorNombre">
                             <label htmlFor="nombres" className="labelNombre">Nombres</label>
-                            <input type="text" id="nombres" name="nombres"/>
+                            <input type="text" id="nombres" className="inputNombre"/>
                         </div>
-                        <div>
+                        <div className= "contenedorApellidos">
                             <label htmlFor="apellidos">Apellidos</label>
-                            <input type="text" id="apellidos" name="apellidos"/>
+                            <input type="text" id="apellidos" name="apellidos" className="inputApellido"/>
                         </div>
                     </div>
 
@@ -40,14 +40,14 @@ const InfoPersonalMyAccountComponent = () => {
                     </div>
 
                     <div className="form-group">
-                        <div>
+                        <div className="contenedorComboBoxId">
                             <label htmlFor="tipoID">Tipo ID</label>
                             <select id="tipoID" name="tipoID">
-                                <option value="cedula">Cédula</option>
-                                <option value="pasaporte">Pasaporte</option>
+                                <option value="cedula">CC</option>
+                                <option value="pasaporte">TI</option>
                             </select>
                         </div>
-                        <div>
+                        <div className="contenedorId">
                             <label htmlFor="numeroID">Número de identificación</label>
                             <input type="text" id="numeroID" name="numeroID"/>
                         </div>

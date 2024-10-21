@@ -52,12 +52,12 @@
     align-items: center;
     padding: 7px 5px;
     border-radius: 20px;
-    border: 1px solid #ccc;
     background-color: white;
     margin-right: 10px;
     gap: 10px;
     transition: background-color 0.3s ease;
     border: #0d2550 0.5px solid;
+
 
 }
 
@@ -90,10 +90,12 @@
 
 .search-input-calendar:hover .date-picker{
     background-color: #e6e6e6;
+    z-index: 9990;
 }
 
 .inputBuscar{
     font-family: Roboto, sans-serif;
+    background-color: red;
 }
 
 

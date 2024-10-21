@@ -13,8 +13,8 @@ const TopBarComponentLoged = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para el menú desplegable
 
     // Función para manejar la redirección a la página de registro
-    const handleSettingsProfile = () => {
-        navigate('/register'); // Redirige a la página de registro
+    const handleMyAccount = () => {
+        navigate('/MyAccount'); // Redirige a la página de registro
     };
 
     const handleCarrito = () => {
@@ -46,17 +46,17 @@ const TopBarComponentLoged = () => {
                         <ul className="dropdown-menu">
                             <div className="contenedorMenuDesplegado">
                                 <img src={settingImg} alt="Agregar Usuario" className="button-icon2"/>
-                                <li><a href="" onClick={handleCarrito}>Mi cuenta</a></li>
+                                <li><a href="" onClick={handleMyAccount}>Mi cuenta</a></li>
                             </div>
 
                             <div className="contenedorMenuDesplegado">
                                 <img src={history} alt="Agregar Usuario" className="button-icon2"/>
-                                <li><a onClick={handleSettingsProfile}>Mis boletos</a></li>
+                                <li><a onClick={handleCarrito}>Mis boletos</a></li>
                             </div>
 
                             <div className="contenedorMenuDesplegado">
                                 <img src={logOutImg} alt="Agregar Usuario" className="button-icon2"/>
-                                <li><a onClick={handleSettingsProfile}>Cerrar sesion</a></li>
+                                <li><a onClick={handleCarrito}>Cerrar sesion</a></li>
                             </div>
                         </ul>
                     )}

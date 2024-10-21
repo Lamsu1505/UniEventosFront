@@ -54,15 +54,41 @@ input[type="email"], input[type="number"] {
 }
 
 .form-name{
-    background-color: red;
     display: flex;
-    gap: 50%;
+    gap: 10%;
 }
 
-.contenedorNombre{
-    background-color: green;
+.form-name, .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px; /* Espaciado entre grupos de formulario */
+    gap: 1%
 }
 
-.labelNombre{
-    background-color: black;
+.contenedorNombre {
+    width: 100%; /* El contenedor ocupará el ancho disponible */
 }
+
+.inputNombre {
+    width: 100%; /* El input ocupará el ancho máximo del contenedor */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.contenedorApellidos {
+    width: 100%; /* El contenedor ocupará el ancho disponible */
+}
+
+.inputApellido {
+    width: 100%; /* El input ocupará el ancho máximo del contenedor */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.contenedorId{
+    width: 50%;
+}
+.contenedorComboBoxId
+{
+    width: 30%;
+}
+
+
